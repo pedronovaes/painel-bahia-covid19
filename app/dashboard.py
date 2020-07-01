@@ -8,37 +8,29 @@ appdash = Dash(
     __name__,
     server=app,
     url_base_pathname='/dash/',
-    external_stylesheets=[dbc.themes.BOOTSTRAP]
+    external_stylesheets=[dbc.themes.FLATLY]
 )
 
 info_bar = html.Div(
     children=html.Ul(
         className='navbar-nav',
         children=[
-            html.Button(
-                type='button',
-                className='btn btn-link',
-                children=html.Li(
-                    className='nav-item',
-                    children=html.A(
-                        className='nav-link',
-                        children='Informações',
-                        href='/info'
-                    )
-                )
+            dbc.Button(
+                children=html.A(
+                    className='nav-link',
+                    children='Informações',
+                    href='/info'
+                ),
+                color='link'
             ),
-            html.Button(
-                type='button',
-                className='btn btn-link',
-                children=html.Li(
-                    className='nav-item',
-                    children=html.A(
-                        className='nav-link',
-                        children='Receber Notificações',
-                        href='/updates'
-                    )
-                )
-            )
+            dbc.Button(
+                children=html.A(
+                    className='nav-link',
+                    children='Receber Notificações',
+                    href='/updates'
+                ),
+                color='link',
+            ),
         ]
     )
 )
@@ -48,7 +40,6 @@ navbar = dbc.Navbar(
         html.A(
             dbc.Row(
                 [
-                    # dbc.Col(html.Img(src=PLOTLY_LOGO, height="30px")),
                     dbc.Col(dbc.NavbarBrand(
                         children=[
                             'Painel Bahia ',
@@ -68,12 +59,12 @@ navbar = dbc.Navbar(
         dbc.NavbarToggler(id="navbar-toggler"),
         dbc.Collapse(info_bar, id="navbar-collapse", navbar=True),
     ]),
-    color="dark",
+    color="primary",
     dark=True,
 )
 
 
-# add callback for toggling the collapse on small screens
+# Callback to collapse navbar
 @appdash.callback(
     Output("navbar-collapse", "is_open"),
     [Input("navbar-toggler", "n_clicks")],
@@ -85,4 +76,5 @@ def toggle_navbar_collapse(n, is_open):
     return is_open
 
 
+appdash.title = 'Painel Bahia covid-19 | Dashboard'
 appdash.layout = html.Div(navbar)
