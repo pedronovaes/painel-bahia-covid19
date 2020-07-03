@@ -115,10 +115,10 @@ body_cities_stats = dbc.Container(
                         dbc.CardBody(
                             html.H3(
                                 '1.100.245',
-                                style={'color': 'yellow', 'fontWeight': 'bold', 'fontSize': '250%'}
+                                style={'color': 'orange', 'fontWeight': 'bold', 'fontSize': '250%'}
                             ),
                         ),
-                        dbc.CardFooter('Confirmados'),
+                        dbc.CardFooter(['Confirmados ', dbc.Badge('+ 100 novos', color='warning')]),
                     ],
                     color='primary',
                     inverse=True,
@@ -136,7 +136,7 @@ body_cities_stats = dbc.Container(
                                 style={'color': 'red', 'fontWeight': 'bold', 'fontSize': '250%'}
                             ),
                         ),
-                        dbc.CardFooter('Mortos'),
+                        dbc.CardFooter(['Mortos ', dbc.Badge('+ 10 novos', color='danger')]),
                     ],
                     color='primary',
                     inverse=True,
@@ -150,11 +150,12 @@ body_cities_stats = dbc.Container(
                     children=[
                         dbc.CardBody(
                             html.H3(
-                                '1.245',
+                                '4.45%',
                                 style={'color': 'white', 'fontWeight': 'bold', 'fontSize': '250%'}
                             ),
+
                         ),
-                        dbc.CardFooter('Taxa de morte'),
+                        dbc.CardFooter(['Taxa de morte ', dbc.Badge('- 0.10%', color='light')]),
                     ],
                     color='primary',
                     inverse=True,
