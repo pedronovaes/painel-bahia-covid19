@@ -1,18 +1,25 @@
 import pandas as pd
-from app import app, dashboard_backend
-from dash import Dash
+
+import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
 
+from app import app, dashboard_backend
 
-appdash = Dash(
+appdash = dash.Dash(
     __name__,
     server=app,
     url_base_pathname='/dash/',
-    external_stylesheets=[dbc.themes.FLATLY]
+    external_stylesheets=[dbc.themes.FLATLY],
+    meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1.0'}]
 )
+
+style = {
+    'width': '100%',
+    'height': '100%',
+}
 
 # Header
 info_bar = html.Div(
@@ -80,8 +87,7 @@ def toggle_navbar_collapse(n, is_open):
     return is_open
 
 
-# Body
-body_cities_stats = dbc.Container(
+body_stats = dbc.Container(
     children=[
         dbc.Row([
             dbc.Col(
@@ -90,11 +96,6 @@ body_cities_stats = dbc.Container(
                         html.H5('Selecione uma cidade', style={'textAlign': 'left'}),
                         dcc.Dropdown(
                             id='cities-dropdown',
-                            # options=[
-                            #     {'label': 'Bahia', 'value': 'Bahia'},
-                            #     {'label': 'Salvador', 'value': 'Salvador'},
-                            #     {'label': 'Irecê', 'value': 'Irecê'},
-                            # ],
                             value='Bahia',
                             clearable=False,
                             searchable=True,
@@ -106,7 +107,7 @@ body_cities_stats = dbc.Container(
                     ]),
                     color='primary',
                     inverse=True,
-                    style={'height': '14vh', 'textAlign': 'center'},
+                    style={'width': '100%', 'height': '100%', 'textAlign': 'center'},
                 ),
                 lg=3, xs=12,
                 style={'marginBottom': '10px'}
@@ -117,7 +118,6 @@ body_cities_stats = dbc.Container(
                         dbc.CardBody(
                             html.H3(
                                 id='ind-confirmed',
-                                # '1.100.245',
                                 style={'color': 'orange', 'fontWeight': 'bold', 'fontSize': '250%'}
                             ),
                         ),
@@ -125,7 +125,7 @@ body_cities_stats = dbc.Container(
                     ],
                     color='primary',
                     inverse=True,
-                    style={'height': '14vh', 'textAlign': 'center'},
+                    style={'width': '100%', 'height': '100%', 'textAlign': 'center'},
                 ),
                 lg=3, xs=12,
                 style={'marginBottom': '10px'}
@@ -136,7 +136,6 @@ body_cities_stats = dbc.Container(
                         dbc.CardBody(
                             html.H3(
                                 id='ind-deaths',
-                                # '1.245',
                                 style={'color': 'red', 'fontWeight': 'bold', 'fontSize': '250%'}
                             ),
                         ),
@@ -144,7 +143,7 @@ body_cities_stats = dbc.Container(
                     ],
                     color='primary',
                     inverse=True,
-                    style={'height': '14vh', 'textAlign': 'center'},
+                    style={'width': '100%', 'height': '100%', 'textAlign': 'center'},
                 ),
                 lg=3, xs=12,
                 style={'marginBottom': '10px'}
@@ -155,62 +154,24 @@ body_cities_stats = dbc.Container(
                         dbc.CardBody(
                             html.H3(
                                 id='ind-rate',
-                                # '4.45%',
                                 style={'color': 'white', 'fontWeight': 'bold', 'fontSize': '250%'}
                             ),
 
                         ),
                         # dbc.CardFooter(['Taxa de morte ', dbc.Badge('- 0.10%', color='light')]),
-                        dbc.CardFooter(['Taxa de morte ']),
+                        dbc.CardFooter(['Taxa de mortalidade ']),
                     ],
                     color='primary',
                     inverse=True,
-                    style={'height': '14vh', 'textAlign': 'center'},
+                    style={'width': '100%', 'height': '100%', 'textAlign': 'center'},
                 ),
                 lg=3, xs=12,
-                # style={'marginBottom': '10px'}
+                style={'marginBottom': '10px'}
             ),
         ])
     ],
     fluid=True,
-    style={'marginTop': '20px'}
-)
-
-body_confirm_death_table = dbc.Container(
-    children=[
-        dbc.Row([
-            dbc.Col(
-                dbc.Card(
-                    children=[
-                        dbc.CardBody('bla'),
-                        dbc.CardFooter(
-                            'Última Atualização 2020-07-02',
-                            style={'textAlign': 'right', 'fontSize': 'small'})
-                    ],
-                    color='primary',
-                    inverse=True,
-                    style={'height': '60vh'},
-                ),
-                lg=4, xs=12,
-                style={'marginBottom': '10px'}
-            ),
-            dbc.Col(
-                dbc.Card(
-                    children=[
-                        dbc.CardHeader('bla'),
-                        dbc.CardBody('bla'),
-                    ],
-                    color='primary',
-                    inverse=True,
-                    style={'height': '60vh'}
-                ),
-                lg=8, xs=12,
-                style={'marginBottom': '10px'}
-            )
-        ])
-    ],
-    fluid=True,
-    style={'marginTop': '10px'}
+    style={'marginTop': '20px'},
 )
 
 
@@ -221,12 +182,11 @@ body_confirm_death_table = dbc.Container(
 )
 def update_cities_options(a):
     df = pd.read_csv('data/cities.csv')
-
     options = [{'label': i, 'value': i} for i in df['city'].unique()]
-
     return options
 
 
+# Callback to update city stats
 @appdash.callback(
     [
         Output(component_id='ind-confirmed', component_property='children'),
@@ -239,11 +199,62 @@ def update_cities_options(a):
 )
 def update_outputs(city):
     df = pd.read_csv('data/new.csv')
-
     return dashboard_backend.news_stats(df, city)
+
+
+body_table_mapbox = dbc.Container(
+    children=[
+        dbc.Row([
+            dbc.Col(
+                dbc.Card(
+                    children=[
+                        dbc.CardBody(
+                            id='cities-table'
+                        ),
+                        dbc.CardFooter(
+                            'Última Atualização 2020-07-02',
+                            style={'textAlign': 'right', 'fontSize': 'small'})
+                    ],
+                    color='primary',
+                    inverse=True,
+                    style={'width': '100%', 'height': '100%'},
+                ),
+                lg=4, xs=12,
+                style={'marginBottom': '10px'}
+            ),
+            dbc.Col(
+                dbc.Card(
+                    children=[
+                        dbc.CardHeader('Casos', style={'fontWeight': 'bold'}),
+                        dbc.CardBody(id='cities-mapbox', style={'padding': '0rem'}),
+                    ],
+                    color='primary',
+                    inverse=True,
+                    style={'width': '100%', 'height': '100%'},
+                ),
+                lg=8, xs=12,
+                style={'marginBottom': '10px'}
+            ),
+        ])
+    ],
+    fluid=True,
+    style={'marginTop': '10px'}
+)
+
+
+@appdash.callback(
+    Output(component_id='cities-mapbox', component_property='children'),
+    [Input(component_id='input', component_property='children')]
+)
+def update_mapbox(a):
+    df = pd.read_csv('data/mapbox.csv')
+    return dashboard_backend.news_mapbox(df)
 
 
 appdash.title = 'Painel Bahia covid-19 | Dashboard'
 appdash.layout = html.Div([
-    html.Div(id='input', style={'display': 'none'}), navbar, body_cities_stats, body_confirm_death_table
+    html.Div(id='input', style={'display': 'none'}),
+    navbar,
+    body_stats,
+    body_table_mapbox,
 ])

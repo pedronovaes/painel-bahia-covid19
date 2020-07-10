@@ -1,5 +1,5 @@
 from app import app
-from app.dashboard import appdash
+from app.dashboard_frontend import appdash
 from flask import render_template
 
 
