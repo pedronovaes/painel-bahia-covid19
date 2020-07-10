@@ -212,7 +212,7 @@ body_table_mapbox = dbc.Container(
                             id='cities-table'
                         ),
                         dbc.CardFooter(
-                            'Última Atualização 2020-07-02',
+                            id='last-update',
                             style={'textAlign': 'right', 'fontSize': 'small'})
                     ],
                     color='primary',
@@ -243,13 +243,68 @@ body_table_mapbox = dbc.Container(
 
 
 @appdash.callback(
-    Output(component_id='cities-mapbox', component_property='children'),
+    [
+        Output(component_id='cities-table', component_property='children'),
+        Output(component_id='last-update', component_property='children'),
+        Output(component_id='cities-mapbox', component_property='children'),
+    ],
     [Input(component_id='input', component_property='children')]
 )
-def update_mapbox(a):
-    df = pd.read_csv('data/mapbox.csv')
-    return dashboard_backend.news_mapbox(df)
+def update_table_mapbox(a):
+    df_cities = pd.read_csv('data/indicators.csv')
+    df_mapbox = pd.read_csv('data/mapbox.csv')
 
+    table, last_update = dashboard_backend.news_table(df_cities)
+    mapbox = dashboard_backend.news_mapbox(df_mapbox)
+
+    return table, last_update, mapbox
+    # return mapbox
+
+
+body_graphs = dbc.Container(
+    children=[
+        dbc.Row([
+            dbc.Col(
+                dbc.Card(
+                    children=[
+                        dbc.CardBody('bla')
+                    ],
+                    color='primary',
+                    inverse=True,
+                    style={'width': '100%', 'height': '100%'}
+                ),
+                lg=4,
+                style={'marginBottom': '10px'}
+            ),
+            dbc.Col(
+                dbc.Card(
+                    children=[
+                        dbc.CardBody('bla')
+                    ],
+                    color='primary',
+                    inverse=True,
+                    style={'width': '100%', 'height': '100%'}
+                ),
+                lg=4,
+                style={'marginBottom': '10px'}
+            ),
+            dbc.Col(
+                dbc.Card(
+                    children=[
+                        dbc.CardBody('bla')
+                    ],
+                    color='primary',
+                    inverse=True,
+                    style={'width': '100%', 'height': '100%'}
+                ),
+                lg=4,
+                style={'marginBottom': '10px'}
+            ),
+        ])
+    ],
+    fluid=True,
+    style={'marginTop': '10px'}
+)
 
 appdash.title = 'Painel Bahia covid-19 | Dashboard'
 appdash.layout = html.Div([
@@ -257,4 +312,5 @@ appdash.layout = html.Div([
     navbar,
     body_stats,
     body_table_mapbox,
+    body_graphs
 ])

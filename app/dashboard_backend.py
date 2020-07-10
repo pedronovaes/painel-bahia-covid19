@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import dash_table
 import dash_core_components as dcc
-import dash_bootstrap_components as dbc
 import plotly.express as px
 
 
@@ -43,7 +42,7 @@ def news_mapbox(df):
         hover_name='city',
         # hover_data=['city', 'last_available_confirmed'],
         zoom=6,
-        height=475,
+        # height=600,
         size_max=50,
     )
 
@@ -56,3 +55,60 @@ def news_mapbox(df):
     fig = dcc.Graph(figure=fig)
 
     return [fig]
+
+
+def news_table(df):
+    last_update = df['date'].unique()[-1]
+
+    df = df[['city', 'last_available_confirmed', 'last_available_deaths']]
+    df = df.sort_values(by='last_available_confirmed', ascending=False)
+    df = df.drop(df[df['city'].str.contains('Bahia|Importados', regex=True)].index)
+
+    table = dash_table.DataTable(
+        columns=[
+            {'name': 'Cidade', 'id': 'city'},
+            {'name': 'Confirmados', 'id': 'last_available_confirmed'},
+            {'name': 'Mortos', 'id': 'last_available_deaths'},
+        ],
+        data=df.head(10).to_dict('records'),
+        editable=False,
+        style_as_list_view=True,
+        style_header={
+            'backgroundColor': '#2C3E50',
+            'border': '#2C3E50',
+            'fontWeight': 'bold',
+            'font': 'Lato, sans-serif',
+            # "height": "2vw",
+        },
+        style_cell={
+            'font-family': 'Lato, sans-serif',
+            # 'font-size': '1.1vw',
+            'border-bottom': '0.01rem solid #2C3E50',
+            'backgroundColor': '#2C3E50',
+            'height': '1.9vw',
+        },
+        style_cell_conditional=[
+            {
+                'if': {'column_id': 'city'},
+                'textAlign': 'left',
+            },
+            {
+                'if': {'column_id': 'last_available_confirmed'},
+                'color': 'orange',
+                'textAlign': 'center',
+            },
+            {
+                'if': {'column_id': 'last_available_deaths'},
+                'color': 'red',
+                'textAlign': 'center',
+            },
+        ],
+    )
+
+    last_update = 'Última Atualização ' + last_update
+
+    return table, last_update
+
+
+def news_graph(df):
+    pass
