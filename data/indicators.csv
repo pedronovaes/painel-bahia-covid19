@@ -1,0 +1,404 @@
+city,date,is_last,last_available_confirmed,last_available_deaths
+Abaré,2020-07-01,True,2,0
+Abaíra,2020-07-01,True,5,0
+Acajutiba,2020-07-01,True,23,1
+Adustina,2020-07-01,True,27,1
+Aiquara,2020-07-01,True,10,1
+Alagoinhas,2020-07-01,True,477,9
+Alcobaça,2020-07-01,True,62,1
+Almadina,2020-07-01,True,19,1
+Amargosa,2020-07-01,True,43,1
+Amélia Rodrigues,2020-07-01,True,92,0
+América Dourada,2020-07-01,True,20,0
+Anagé,2020-07-01,True,10,1
+Andaraí,2020-07-01,True,8,0
+Andorinha,2020-07-01,True,5,0
+Angical,2020-07-01,True,1,0
+Anguera,2020-07-01,True,28,0
+Antas,2020-07-01,True,5,0
+Antônio Cardoso,2020-07-01,True,11,0
+Antônio Gonçalves,2020-07-01,True,14,0
+Aporá,2020-07-01,True,37,2
+Apuarema,2020-07-01,True,63,0
+Aracatu,2020-07-01,True,15,0
+Araci,2020-07-01,True,224,1
+Aramari,2020-07-01,True,7,0
+Arataca,2020-07-01,True,2,0
+Aratuípe,2020-07-01,True,1,1
+Araças,2020-07-01,True,6,0
+Aurelino Leal,2020-07-01,True,91,1
+Baianópolis,2020-07-01,True,3,0
+Baixa Grande,2020-07-01,True,2,0
+Banzaê,2020-07-01,True,23,0
+Barra,2020-07-01,True,24,0
+Barra da Estiva,2020-07-01,True,2,0
+Barra do Choça,2020-07-01,True,34,1
+Barra do Mendes,2020-07-01,True,2,0
+Barra do Rocha,2020-07-01,True,6,0
+Barreiras,2020-07-01,True,362,5
+Barro Preto,2020-07-01,True,32,0
+Barrocas,2020-07-01,True,36,0
+Belmonte,2020-07-01,True,85,1
+Belo Campo,2020-07-01,True,0,0
+Biritinga,2020-07-01,True,1,0
+Boa Nova,2020-07-01,True,1,0
+Boa Vista do Tupim,2020-07-01,True,6,0
+Bom Jesus da Lapa,2020-07-01,True,64,0
+Bom Jesus da Serra,2020-07-01,True,13,0
+Boninal,2020-07-01,True,4,0
+Bonito,2020-07-01,True,0,0
+Boquira,2020-07-01,True,14,0
+Botuporã,2020-07-01,True,0,0
+Brejões,2020-07-01,True,11,0
+Brotas de Macaúbas,2020-07-01,True,1,0
+Brumado,2020-07-01,True,186,3
+Buerarema,2020-07-01,True,93,5
+Buritirama,2020-07-01,True,30,0
+Caatiba,2020-07-01,True,49,0
+Cabaceiras do Paraguaçu,2020-07-01,True,15,0
+Cachoeira,2020-07-01,True,81,1
+Caculé,2020-07-01,True,2,1
+Caetanos,2020-07-01,True,2,0
+Caetité,2020-07-01,True,44,0
+Cafarnaum,2020-07-01,True,3,0
+Cairu,2020-07-01,True,49,1
+Caldeirão Grande,2020-07-01,True,40,1
+Camacan,2020-07-01,True,315,7
+Camamu,2020-07-01,True,91,2
+Camaçari,2020-07-01,True,1449,24
+Campo Alegre de Lourdes,2020-07-01,True,37,1
+Campo Formoso,2020-07-01,True,96,0
+Canarana,2020-07-01,True,24,0
+Canavieiras,2020-07-01,True,34,2
+Candeal,2020-07-01,True,18,0
+Candeias,2020-07-01,True,674,18
+Candiba,2020-07-01,True,12,0
+Cansanção,2020-07-01,True,37,2
+Canudos,2020-07-01,True,15,1
+Capela do Alto Alegre,2020-07-01,True,14,0
+Capim Grosso,2020-07-01,True,107,3
+Caravelas,2020-07-01,True,48,0
+Caraíbas,2020-07-01,True,6,0
+Cardeal da Silva,2020-07-01,True,7,0
+Carinhanha,2020-07-01,True,2,0
+Casa Nova,2020-07-01,True,110,3
+Castro Alves,2020-07-01,True,62,1
+Catolândia,2020-07-01,True,1,0
+Catu,2020-07-01,True,302,2
+Caém,2020-07-01,True,66,0
+Central,2020-07-01,True,0,0
+Chorrochó,2020-07-01,True,1,0
+Cipó,2020-07-01,True,19,0
+Coaraci,2020-07-01,True,72,3
+Cocos,2020-07-01,True,7,0
+Conceição da Feira,2020-07-01,True,96,1
+Conceição do Almeida,2020-07-01,True,37,0
+Conceição do Coité,2020-07-01,True,190,0
+Conceição do Jacuípe,2020-07-01,True,161,0
+Conde,2020-07-01,True,40,4
+Condeúba,2020-07-01,True,26,0
+Coração de Maria,2020-07-01,True,54,0
+Cordeiros,2020-07-01,True,1,0
+Coribe,2020-07-01,True,2,0
+Coronel João Sá,2020-07-01,True,14,0
+Correntina,2020-07-01,True,5,0
+Cotegipe,2020-07-01,True,1,0
+Cravolândia,2020-07-01,True,4,0
+Cristópolis,2020-07-01,True,27,0
+Crisópolis,2020-07-01,True,11,0
+Cruz das Almas,2020-07-01,True,101,2
+Curaçá,2020-07-01,True,68,0
+Cândido Sales,2020-07-01,True,102,3
+Cícero Dantas,2020-07-01,True,34,1
+Dias d'Ávila,2020-07-01,True,420,11
+Dom Basílio,2020-07-01,True,6,0
+Dom Macedo Costa,2020-07-01,True,8,0
+Dário Meira,2020-07-01,True,24,1
+Elísio Medrado,2020-07-01,True,2,0
+Encruzilhada,2020-07-01,True,56,0
+Entre Rios,2020-07-01,True,74,0
+Esplanada,2020-07-01,True,42,0
+Euclides da Cunha,2020-07-01,True,29,1
+Eunápolis,2020-07-01,True,653,12
+Feira da Mata,2020-07-01,True,4,0
+Feira de Santana,2020-07-01,True,3289,49
+Filadélfia,2020-07-01,True,87,2
+Firmino Alves,2020-07-01,True,3,0
+Floresta Azul,2020-07-01,True,58,0
+Formosa do Rio Preto,2020-07-01,True,15,0
+Fátima,2020-07-01,True,16,0
+Gandu,2020-07-01,True,563,10
+Gentio do Ouro,2020-07-01,True,18,0
+Glória,2020-07-01,True,19,1
+Gongogi,2020-07-01,True,19,2
+Governador Mangabeira,2020-07-01,True,22,1
+Guajeru,2020-07-01,True,2,0
+Guanambi,2020-07-01,True,84,0
+Guaratinga,2020-07-01,True,49,2
+Heliópolis,2020-07-01,True,8,0
+Iaçu,2020-07-01,True,42,4
+Ibiassucê,2020-07-01,True,1,0
+Ibicaraí,2020-07-01,True,132,1
+Ibicoara,2020-07-01,True,1,0
+Ibicuí,2020-07-01,True,32,0
+Ibipeba,2020-07-01,True,5,0
+Ibipitanga,2020-07-01,True,7,0
+Ibiquera,2020-07-01,True,0,0
+Ibirapitanga,2020-07-01,True,88,1
+Ibirapuã,2020-07-01,True,55,1
+Ibirataia,2020-07-01,True,61,2
+Ibitiara,2020-07-01,True,8,1
+Ibotirama,2020-07-01,True,26,0
+Ichu,2020-07-01,True,2,0
+Igaporã,2020-07-01,True,1,0
+Igrapiúna,2020-07-01,True,47,1
+Iguaí,2020-07-01,True,205,1
+Ilhéus,2020-07-01,True,1335,46
+Importados/Indefinidos,2020-07-01,True,3597,6
+Inhambupe,2020-07-01,True,17,1
+Ipecaetá,2020-07-01,True,6,0
+Ipiaú,2020-07-01,True,705,10
+Ipirá,2020-07-01,True,74,2
+Iramaia,2020-07-01,True,2,0
+Iraquara,2020-07-01,True,49,0
+Irará,2020-07-01,True,26,0
+Irecê,2020-07-01,True,104,1
+Itabela,2020-07-01,True,79,1
+Itaberaba,2020-07-01,True,264,9
+Itabuna,2020-07-01,True,2637,58
+Itacaré,2020-07-01,True,120,3
+Itaeté,2020-07-01,True,47,0
+Itagi,2020-07-01,True,11,0
+Itagibá,2020-07-01,True,67,3
+Itagimirim,2020-07-01,True,5,0
+Itaguaçu da Bahia,2020-07-01,True,1,0
+Itaju do Colônia,2020-07-01,True,19,0
+Itajuípe,2020-07-01,True,396,3
+Itamaraju,2020-07-01,True,540,9
+Itamari,2020-07-01,True,2,0
+Itambé,2020-07-01,True,12,0
+Itanagra,2020-07-01,True,8,2
+Itanhém,2020-07-01,True,105,1
+Itaparica,2020-07-01,True,79,3
+Itapebi,2020-07-01,True,71,1
+Itapetinga,2020-07-01,True,162,5
+Itapicuru,2020-07-01,True,65,0
+Itapitanga,2020-07-01,True,16,1
+Itapé,2020-07-01,True,33,2
+Itaquara,2020-07-01,True,4,0
+Itarantim,2020-07-01,True,29,1
+Itatim,2020-07-01,True,36,2
+Itiruçu,2020-07-01,True,3,0
+Itiúba,2020-07-01,True,7,1
+Itororó,2020-07-01,True,28,1
+Ituaçu,2020-07-01,True,1,1
+Ituberá,2020-07-01,True,125,4
+Iuiú,2020-07-01,True,1,0
+Jaborandi,2020-07-01,True,1,0
+Jacaraci,2020-07-01,True,1,0
+Jacobina,2020-07-01,True,110,1
+Jaguaquara,2020-07-01,True,216,0
+Jaguarari,2020-07-01,True,65,0
+Jaguaripe,2020-07-01,True,27,1
+Jandaíra,2020-07-01,True,65,1
+Jequié,2020-07-01,True,958,29
+Jeremoabo,2020-07-01,True,11,0
+Jiquiriçá,2020-07-01,True,2,0
+Jitaúna,2020-07-01,True,33,2
+João Dourado,2020-07-01,True,94,1
+Juazeiro,2020-07-01,True,721,21
+Jucuruçu,2020-07-01,True,3,0
+Jussara,2020-07-01,True,1,0
+Jussari,2020-07-01,True,7,0
+Jussiape,2020-07-01,True,2,0
+Lafaiete Coutinho,2020-07-01,True,7,1
+Laje,2020-07-01,True,16,0
+Lajedo do Tabocal,2020-07-01,True,11,0
+Lajedão,2020-07-01,True,8,0
+Lamarão,2020-07-01,True,22,0
+Lapão,2020-07-01,True,33,0
+Lauro de Freitas,2020-07-01,True,2360,35
+Lençóis,2020-07-01,True,0,0
+Licínio de Almeida,2020-07-01,True,11,0
+Livramento de Nossa Senhora,2020-07-01,True,16,0
+Luís Eduardo Magalhães,2020-07-01,True,259,3
+Macajuba,2020-07-01,True,9,0
+Macarani,2020-07-01,True,24,1
+Macaúbas,2020-07-01,True,4,0
+Macururé,2020-07-01,True,18,0
+Madre de Deus,2020-07-01,True,220,2
+Maetinga,2020-07-01,True,1,0
+Maiquinique,2020-07-01,True,16,0
+Mairi,2020-07-01,True,64,0
+Malhada,2020-07-01,True,2,0
+Malhada de Pedras,2020-07-01,True,2,0
+Manoel Vitorino,2020-07-01,True,43,1
+Mansidão,2020-07-01,True,37,0
+Maracás,2020-07-01,True,32,1
+Maragogipe,2020-07-01,True,96,3
+Maraú,2020-07-01,True,35,2
+Marcionílio Souza,2020-07-01,True,7,0
+Mascote,2020-07-01,True,11,0
+Mata de São João,2020-07-01,True,163,1
+Matina,2020-07-01,True,0,0
+Medeiros Neto,2020-07-01,True,101,1
+Miguel Calmon,2020-07-01,True,18,1
+Milagres,2020-07-01,True,54,1
+Mirangaba,2020-07-01,True,5,0
+Mirante,2020-07-01,True,7,1
+Monte Santo,2020-07-01,True,71,2
+Morpará,2020-07-01,True,12,1
+Morro do Chapéu,2020-07-01,True,10,0
+Mortugaba,2020-07-01,True,10,0
+Mucugê,2020-07-01,True,11,0
+Mucuri,2020-07-01,True,159,2
+Mulungu do Morro,2020-07-01,True,8,1
+Mundo Novo,2020-07-01,True,1,1
+Muniz Ferreira,2020-07-01,True,11,0
+Muquém de São Francisco,2020-07-01,True,23,0
+Muritiba,2020-07-01,True,75,1
+Mutuípe,2020-07-01,True,27,0
+Nazaré,2020-07-01,True,44,0
+Nilo Peçanha,2020-07-01,True,30,1
+Nordestina,2020-07-01,True,55,0
+Nova Canaã,2020-07-01,True,22,0
+Nova Fátima,2020-07-01,True,5,1
+Nova Ibiá,2020-07-01,True,38,2
+Nova Itarana,2020-07-01,True,2,0
+Nova Redenção,2020-07-01,True,3,0
+Nova Soure,2020-07-01,True,72,0
+Nova Viçosa,2020-07-01,True,149,3
+Novo Horizonte,2020-07-01,True,0,0
+Novo Triunfo,2020-07-01,True,20,0
+Olindina,2020-07-01,True,17,0
+Oliveira dos Brejinhos,2020-07-01,True,41,0
+Ouriçangas,2020-07-01,True,10,0
+Ourolândia,2020-07-01,True,8,0
+Palmas de Monte Alto,2020-07-01,True,18,0
+Palmeiras,2020-07-01,True,3,0
+Paramirim,2020-07-01,True,6,1
+Paratinga,2020-07-01,True,11,0
+Paripiranga,2020-07-01,True,23,0
+Pau Brasil,2020-07-01,True,30,3
+Paulo Afonso,2020-07-01,True,176,7
+Pedro Alexandre,2020-07-01,True,3,0
+Pedrão,2020-07-01,True,2,0
+Piatã,2020-07-01,True,7,0
+Pilão Arcado,2020-07-01,True,49,0
+Pindaí,2020-07-01,True,17,0
+Pindobaçu,2020-07-01,True,21,0
+Pintadas,2020-07-01,True,80,0
+Piraí do Norte,2020-07-01,True,45,0
+Piripá,2020-07-01,True,43,0
+Piritiba,2020-07-01,True,5,0
+Planalto,2020-07-01,True,40,0
+Pojuca,2020-07-01,True,215,2
+Ponto Novo,2020-07-01,True,21,1
+Porto Seguro,2020-07-01,True,575,2
+Potiraguá,2020-07-01,True,33,0
+Poções,2020-07-01,True,186,2
+Prado,2020-07-01,True,116,2
+Presidente Dutra,2020-07-01,True,39,0
+Presidente Jânio Quadros,2020-07-01,True,2,0
+Presidente Tancredo Neves,2020-07-01,True,91,0
+Pé de Serra,2020-07-01,True,22,0
+Queimadas,2020-07-01,True,58,0
+Quijingue,2020-07-01,True,18,1
+Quixabeira,2020-07-01,True,11,0
+Rafael Jambeiro,2020-07-01,True,64,0
+Remanso,2020-07-01,True,31,1
+Retirolândia,2020-07-01,True,56,0
+Riacho de Santana,2020-07-01,True,26,0
+Riachão das Neves,2020-07-01,True,50,0
+Riachão do Jacuípe,2020-07-01,True,65,2
+Ribeira do Amparo,2020-07-01,True,17,0
+Ribeira do Pombal,2020-07-01,True,118,1
+Ribeirão do Largo,2020-07-01,True,4,0
+Rio Real,2020-07-01,True,55,0
+Rio do Antônio,2020-07-01,True,4,0
+Rio do Pires,2020-07-01,True,6,1
+Rodelas,2020-07-01,True,8,0
+Ruy Barbosa,2020-07-01,True,87,1
+Salinas da Margarida,2020-07-01,True,13,1
+Salvador,2020-07-01,True,34613,1189
+Santa Brígida,2020-07-01,True,14,0
+Santa Bárbara,2020-07-01,True,134,0
+Santa Cruz Cabrália,2020-07-01,True,113,1
+Santa Cruz da Vitória,2020-07-01,True,11,1
+Santa Inês,2020-07-01,True,8,1
+Santa Luzia,2020-07-01,True,28,0
+Santa Maria da Vitória,2020-07-01,True,1,0
+Santa Rita de Cássia,2020-07-01,True,12,1
+Santa Teresinha,2020-07-01,True,22,1
+Santaluz,2020-07-01,True,69,1
+Santana,2020-07-01,True,0,0
+Santanópolis,2020-07-01,True,24,0
+Santo Amaro,2020-07-01,True,196,3
+Santo Antônio de Jesus,2020-07-01,True,434,7
+Santo Estêvão,2020-07-01,True,43,1
+Sapeaçu,2020-07-01,True,32,0
+Saubara,2020-07-01,True,35,2
+Saúde,2020-07-01,True,0,0
+Seabra,2020-07-01,True,24,1
+Senhor do Bonfim,2020-07-01,True,147,1
+Sento Sé,2020-07-01,True,25,0
+Serra Dourada,2020-07-01,True,0,0
+Serra Preta,2020-07-01,True,20,0
+Serra do Ramalho,2020-07-01,True,8,0
+Serrinha,2020-07-01,True,268,3
+Serrolândia,2020-07-01,True,24,0
+Simões Filho,2020-07-01,True,914,27
+Sobradinho,2020-07-01,True,149,9
+Souto Soares,2020-07-01,True,5,0
+Sátiro Dias,2020-07-01,True,21,0
+São Desidério,2020-07-01,True,63,0
+São Domingos,2020-07-01,True,6,0
+São Felipe,2020-07-01,True,22,0
+São Francisco do Conde,2020-07-01,True,236,4
+São Félix,2020-07-01,True,24,0
+São Félix do Coribe,2020-07-01,True,2,0
+São Gabriel,2020-07-01,True,4,0
+São Gonçalo dos Campos,2020-07-01,True,128,2
+São José da Vitória,2020-07-01,True,64,1
+São José do Jacuípe,2020-07-01,True,4,1
+São Miguel das Matas,2020-07-01,True,3,0
+São Sebastião do Passé,2020-07-01,True,198,4
+Sítio do Quinto,2020-07-01,True,28,0
+Tabocas do Brejo Velho,2020-07-01,True,5,0
+Tanhaçu,2020-07-01,True,0,0
+Tanque Novo,2020-07-01,True,0,0
+Tanquinho,2020-07-01,True,29,1
+Taperoá,2020-07-01,True,46,0
+Tapiramutá,2020-07-01,True,3,0
+Teixeira de Freitas,2020-07-01,True,1315,18
+Teodoro Sampaio,2020-07-01,True,15,0
+Teofilândia,2020-07-01,True,145,0
+Teolândia,2020-07-01,True,56,0
+Terra Nova,2020-07-01,True,65,1
+Tremedal,2020-07-01,True,3,0
+Tucano,2020-07-01,True,30,1
+Uauá,2020-07-01,True,24,0
+Ubaitaba,2020-07-01,True,93,2
+Ubatã,2020-07-01,True,91,2
+Ubaíra,2020-07-01,True,5,0
+Uibaí,2020-07-01,True,4,0
+Umburanas,2020-07-01,True,83,0
+Una,2020-07-01,True,32,0
+Urandi,2020-07-01,True,125,2
+Uruçuca,2020-07-01,True,281,14
+Utinga,2020-07-01,True,6,1
+Valente,2020-07-01,True,217,3
+Valença,2020-07-01,True,547,16
+Varzedo,2020-07-01,True,4,2
+Vera Cruz,2020-07-01,True,104,3
+Vereda,2020-07-01,True,30,1
+Vitória da Conquista,2020-07-01,True,794,16
+Várzea Nova,2020-07-01,True,17,0
+Várzea da Roça,2020-07-01,True,4,1
+Wagner,2020-07-01,True,1,0
+Wanderley,2020-07-01,True,1,0
+Wenceslau Guimarães,2020-07-01,True,133,2
+Xique-Xique,2020-07-01,True,38,0
+Água Fria,2020-07-01,True,31,1
+Érico Cardoso,2020-07-01,True,0,0
+Bahia,2020-07-02,True,79349,1947
