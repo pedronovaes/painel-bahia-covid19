@@ -1,5 +1,3 @@
-import numpy as np
-import pandas as pd
 import dash_table
 import dash_core_components as dcc
 import plotly.express as px
@@ -35,8 +33,8 @@ def news_mapbox(df):
 
     fig = px.scatter_mapbox(
         data_frame=df,
-        lat='lat',
-        lon='lon',
+        lat='latitude',
+        lon='longitude',
         color='last_available_confirmed',
         size=df['last_available_confirmed'] ** 0.37,
         hover_name='city',
@@ -52,9 +50,9 @@ def news_mapbox(df):
         coloraxis_showscale=False,
     )
 
-    fig = dcc.Graph(figure=fig)
+    fig = dcc.Graph(figure=fig, config={'displayModeBar': False})
 
-    return [fig]
+    return fig
 
 
 def news_table(df):
@@ -99,7 +97,7 @@ def news_table(df):
             },
             {
                 'if': {'column_id': 'last_available_deaths'},
-                'color': 'red',
+                'color': '#E74C3C',
                 'textAlign': 'center',
             },
         ],
@@ -110,5 +108,67 @@ def news_table(df):
     return table, last_update
 
 
-def news_graph(df):
-    pass
+def news_graph(df, city):
+    temp = df[df['city'] == city]
+
+    # Confirmed cases
+    confirmed_cases = px.line(temp, x='date', y='last_available_confirmed')
+    confirmed_cases.update_layout(
+        yaxis_title='Número de casos',
+        xaxis_title='',
+        margin={'r': 20, 't': 0, 'l': 0, 'b': 0},
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
+        yaxis={'linecolor': 'rgba(0,0,0,0)'},
+        hoverlabel={'font': {'color': 'black'}},
+        xaxis_showgrid=False,
+        yaxis_showgrid=False,
+        xaxis={'tickformat': '%d/%m'},
+        font=dict(family='Roboto, sans-serif', size=12, color='#f4f4f4'),
+        autosize=True,
+        showlegend=False,
+        legend_orientation='h',
+    )
+    confirmed_cases = dcc.Graph(figure=confirmed_cases, config={'displayModeBar': False})
+
+    # Daily cases
+    daily_cases = px.line(temp, x='date', y='new_confirmed')
+    daily_cases.update_layout(
+        yaxis_title='Número de casos diários',
+        xaxis_title='',
+        margin={'r': 20, 't': 0, 'l': 0, 'b': 0},
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
+        yaxis={'linecolor': 'rgba(0,0,0,0)'},
+        hoverlabel={'font': {'color': 'black'}},
+        xaxis_showgrid=False,
+        yaxis_showgrid=False,
+        xaxis={'tickformat': '%d/%m'},
+        font=dict(family='Roboto, sans-serif', size=12, color='#f4f4f4'),
+        autosize=True,
+        showlegend=False,
+        legend_orientation='h',
+    )
+    daily_cases = dcc.Graph(figure=daily_cases, config={'displayModeBar': False})
+
+    # Deaths cases
+    deaths_cases = px.line(temp, x='date', y='last_available_deaths')
+    deaths_cases.update_layout(
+        yaxis_title='Número de mortes',
+        xaxis_title='',
+        margin={'r': 20, 't': 0, 'l': 0, 'b': 0},
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
+        yaxis={'linecolor': 'rgba(0,0,0,0)'},
+        hoverlabel={'font': {'color': 'white'}},
+        xaxis_showgrid=False,
+        yaxis_showgrid=False,
+        xaxis={'tickformat': '%d/%m'},
+        font=dict(family='Roboto, sans-serif', size=12, color='#f4f4f4'),
+        autosize=True,
+        showlegend=False,
+        legend_orientation='h',
+    )
+    deaths_cases = dcc.Graph(figure=deaths_cases, config={'displayModeBar': False})
+
+    return confirmed_cases, daily_cases, deaths_cases

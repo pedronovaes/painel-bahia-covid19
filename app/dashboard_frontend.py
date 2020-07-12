@@ -16,6 +16,9 @@ appdash = dash.Dash(
     meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1.0'}]
 )
 
+# Global variables
+DATABASE_PATH = 'api/data/'
+
 style = {
     'width': '100%',
     'height': '100%',
@@ -136,7 +139,7 @@ body_stats = dbc.Container(
                         dbc.CardBody(
                             html.H3(
                                 id='ind-deaths',
-                                style={'color': 'red', 'fontWeight': 'bold', 'fontSize': '250%'}
+                                style={'color': '#E74C3C', 'fontWeight': 'bold', 'fontSize': '250%'}
                             ),
                         ),
                         dbc.CardFooter(['Mortos ', dbc.Badge(id='badge-deaths', color='danger')]),
@@ -181,7 +184,8 @@ body_stats = dbc.Container(
     [Input(component_id='input', component_property='children')]
 )
 def update_cities_options(a):
-    df = pd.read_csv('data/cities.csv')
+    # df = pd.read_csv('data/cities.csv')
+    df = pd.read_csv(DATABASE_PATH + 'cidades.csv')
     options = [{'label': i, 'value': i} for i in df['city'].unique()]
     return options
 
@@ -198,7 +202,8 @@ def update_cities_options(a):
     [Input(component_id='cities-dropdown', component_property='value')]
 )
 def update_outputs(city):
-    df = pd.read_csv('data/new.csv')
+    # df = pd.read_csv('data/new.csv')
+    df = pd.read_csv(DATABASE_PATH + 'ultimos_casos.csv')
     return dashboard_backend.news_stats(df, city)
 
 
@@ -251,11 +256,12 @@ body_table_mapbox = dbc.Container(
     [Input(component_id='input', component_property='children')]
 )
 def update_table_mapbox(a):
-    df_cities = pd.read_csv('data/indicators.csv')
-    df_mapbox = pd.read_csv('data/mapbox.csv')
+    # df_cities = pd.read_csv('data/indicators.csv')
+    # df_mapbox = pd.read_csv('data/mapbox.csv')
+    df = pd.read_csv(DATABASE_PATH + 'ultimos_casos.csv')
 
-    table, last_update = dashboard_backend.news_table(df_cities)
-    mapbox = dashboard_backend.news_mapbox(df_mapbox)
+    table, last_update = dashboard_backend.news_table(df)
+    mapbox = dashboard_backend.news_mapbox(df)
 
     return table, last_update, mapbox
     # return mapbox
@@ -267,7 +273,11 @@ body_graphs = dbc.Container(
             dbc.Col(
                 dbc.Card(
                     children=[
-                        dbc.CardBody('bla')
+                        dbc.CardHeader(id='confirmed-graph-header', style={'fontWeight': 'bold'}),
+                        dbc.CardBody(
+                            id='confirmed-graph',
+                            style={'padding': '0rem'}
+                        )
                     ],
                     color='primary',
                     inverse=True,
@@ -279,7 +289,11 @@ body_graphs = dbc.Container(
             dbc.Col(
                 dbc.Card(
                     children=[
-                        dbc.CardBody('bla')
+                        dbc.CardHeader(id='daily-confirmed-graph-header', style={'fontWeight': 'bold'}),
+                        dbc.CardBody(
+                            id='daily-confirmed-graph',
+                            style={'padding': '0rem'}
+                        )
                     ],
                     color='primary',
                     inverse=True,
@@ -291,7 +305,11 @@ body_graphs = dbc.Container(
             dbc.Col(
                 dbc.Card(
                     children=[
-                        dbc.CardBody('bla')
+                        dbc.CardHeader(id='deaths-graph-header', style={'fontWeight': 'bold'}),
+                        dbc.CardBody(
+                            id='deaths-graph',
+                            style={'padding': '0rem'}
+                        )
                     ],
                     color='primary',
                     inverse=True,
@@ -305,6 +323,32 @@ body_graphs = dbc.Container(
     fluid=True,
     style={'marginTop': '10px'}
 )
+
+
+@appdash.callback(
+    [
+        Output(component_id='confirmed-graph-header', component_property='children'),
+        Output(component_id='confirmed-graph', component_property='children'),
+        Output(component_id='daily-confirmed-graph-header', component_property='children'),
+        Output(component_id='daily-confirmed-graph', component_property='children'),
+        Output(component_id='deaths-graph-header', component_property='children'),
+        Output(component_id='deaths-graph', component_property='children'),
+    ],
+    [Input(component_id='cities-dropdown', component_property='value')]
+)
+def update_graphs(city):
+    df = pd.read_csv(DATABASE_PATH + 'dashboard.csv')
+
+    confirmed_graph_header = 'Casos Confirmados | {}'.format(city)
+    daily_confirmed_graph_header = 'Casos Diários Confirmados | {}'.format(city)
+    deaths_graph_header = 'Mortes Confirmadas | {}'.format(city)
+
+    confirmed_graph, daily_graph, deaths_cases = dashboard_backend.news_graph(df, city)
+
+    return confirmed_graph_header, confirmed_graph, \
+        daily_confirmed_graph_header, daily_graph, \
+        deaths_graph_header, deaths_cases
+
 
 appdash.title = 'Painel Bahia covid-19 | Dashboard'
 appdash.layout = html.Div([
