@@ -38,7 +38,10 @@ def news_mapbox(df):
         color='last_available_confirmed',
         size=df['last_available_confirmed'] ** 0.37,
         hover_name='city',
-        # hover_data=['city', 'last_available_confirmed'],
+        hover_data={
+            'last_available_confirmed': True,
+            'last_available_deaths': True
+        },
         zoom=6,
         # height=600,
         size_max=50,
@@ -48,6 +51,10 @@ def news_mapbox(df):
         mapbox_style='streets',
         margin={'r': 0, 't': 0, 'l': 0, 'b': 0},
         coloraxis_showscale=False,
+    )
+
+    fig.update_traces(
+        hovertemplate='<b>%{hovertext}</b><br><br>Confirmados: %{marker.color}<br>Mortes: %{customdata[1]}<extra></extra>'
     )
 
     fig = dcc.Graph(figure=fig, config={'displayModeBar': False})
