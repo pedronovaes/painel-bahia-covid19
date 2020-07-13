@@ -38,7 +38,7 @@ def get_data():
             break
 
         # Sleep time to make a new request
-        time.sleep(10)
+        # time.sleep(10)
 
     print('[LOG] Finishing get_data at {}'.format(datetime.now()))
 
@@ -46,8 +46,11 @@ def get_data():
 
 
 # Dataprep
-def dataprep(df):
-    print('[LOG] Dataprep')
+def dataprep():
+    print('[LOG] Starting Dataprep at {}'.format(datetime.now()))
+
+    df = pd.read_csv(PATH + 'dados_covid.csv')
+
     # Drop some unable columns
     cols = ['epidemiological_week', 'estimated_population_2019', 'is_repeated', 'order_for_place', 'state']
     df = df.drop(cols, axis=1)
@@ -80,7 +83,10 @@ def dataprep(df):
         'last_available_death_rate', 'last_available_deaths', 'new_confirmed',
         'new_deaths', 'latitude', 'longitude'
     ]]
+
     last_cases.to_csv(PATH + 'ultimos_casos.csv', index=False)
+
+    print('[LOG] Finishing Dataprep at {}'.format(datetime.now()))
 
 
 if __name__ == '__main__':
@@ -88,9 +94,11 @@ if __name__ == '__main__':
     while True:
         # Get data
         df = get_data()
+
+        # Saving data
         df.to_csv(PATH + 'dados_covid.csv', index=False)
 
         # Preprocessing
-        dataprep(df)
+        dataprep()
 
         time.sleep(1800)
