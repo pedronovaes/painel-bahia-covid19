@@ -127,7 +127,7 @@ def news_graph(df, city):
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         yaxis={'linecolor': 'rgba(0,0,0,0)'},
-        hoverlabel={'font': {'color': 'black'}},
+        hoverlabel={'font': {'color': 'white'}},
         xaxis_showgrid=False,
         yaxis_showgrid=False,
         xaxis={'tickformat': '%d/%m'},
@@ -136,6 +136,10 @@ def news_graph(df, city):
         showlegend=False,
         legend_orientation='h',
     )
+    confirmed_cases.update_traces(
+        hovertemplate='Data: %{x}<br>Confirmados: %{y}<extra></extra>'
+    )
+
     confirmed_cases = dcc.Graph(figure=confirmed_cases, config={'displayModeBar': False})
 
     # Daily cases
@@ -147,7 +151,7 @@ def news_graph(df, city):
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         yaxis={'linecolor': 'rgba(0,0,0,0)'},
-        hoverlabel={'font': {'color': 'black'}},
+        hoverlabel={'font': {'color': 'white'}},
         xaxis_showgrid=False,
         yaxis_showgrid=False,
         xaxis={'tickformat': '%d/%m'},
@@ -155,6 +159,9 @@ def news_graph(df, city):
         autosize=True,
         showlegend=False,
         legend_orientation='h',
+    )
+    daily_cases.update_traces(
+        hovertemplate='Data: %{x}<br>Confirmados: %{y}<extra></extra>'
     )
     daily_cases = dcc.Graph(figure=daily_cases, config={'displayModeBar': False})
 
@@ -175,6 +182,9 @@ def news_graph(df, city):
         autosize=True,
         showlegend=False,
         legend_orientation='h',
+    )
+    deaths_cases.update_traces(
+        hovertemplate='Data: %{x}<br>Mortes: %{y}<extra></extra>'
     )
     deaths_cases = dcc.Graph(figure=deaths_cases, config={'displayModeBar': False})
 
