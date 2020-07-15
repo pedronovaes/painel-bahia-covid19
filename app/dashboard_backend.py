@@ -110,7 +110,10 @@ def news_table(df):
         ],
     )
 
-    last_update = 'Última Atualização ' + last_update
+    last_update = last_update.split('-')
+    last_update = str(last_update[2] + '-' + last_update[1] + '-' + last_update[0])
+
+    last_update = 'Última Atualização: ' + last_update
 
     return table, last_update
 
@@ -181,7 +184,7 @@ def news_graph(df, city):
         font=dict(family='Roboto, sans-serif', size=12, color='#f4f4f4'),
         autosize=True,
         showlegend=False,
-        legend_orientation='h',
+        legend_orientation='h'
     )
     deaths_cases.update_traces(
         hovertemplate='Data: %{x}<br>Mortes: %{y}<extra></extra>'

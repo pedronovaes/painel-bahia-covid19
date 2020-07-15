@@ -136,6 +136,10 @@ if __name__ == '__main__':
         # Save dashboards dataframes
         save_data()
 
+        current_time = datetime.now().strftime('%H:%M')
+        current_time = pd.DataFrame({'current_time': [current_time]})
+        current_time.to_csv(DATABASE_PATH + 'current_time.csv', index=False)
+
         logging.info('(main):\t\tFinishing')
 
         time.sleep(21600)

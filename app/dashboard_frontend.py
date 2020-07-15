@@ -251,9 +251,13 @@ def update_table_mapbox(a):
     # df_cities = pd.read_csv('data/indicators.csv')
     # df_mapbox = pd.read_csv('data/mapbox.csv')
     df = pd.read_csv(DATABASE_PATH + 'ultimos_casos.csv')
+    current_time = pd.read_csv(DATABASE_PATH + 'current_time.csv')
 
     table, last_update = dashboard_backend.news_table(df)
     mapbox = dashboard_backend.news_mapbox(df)
+
+    data_repo = html.A('brasil.io', href='https://brasil.io/home/')
+    last_update = ['Fonte: ', data_repo, ' | ', last_update, ' ', current_time.iloc[0, 0]]
 
     return table, last_update, mapbox
     # return mapbox
