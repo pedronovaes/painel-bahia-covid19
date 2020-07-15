@@ -1,6 +1,7 @@
 import dash_table
 import dash_core_components as dcc
 import plotly.express as px
+import plotly.graph_objects as go
 
 
 def news_stats(df, city):
@@ -122,7 +123,14 @@ def news_graph(df, city):
     temp = df[df['city'] == city]
 
     # Confirmed cases
-    confirmed_cases = px.line(temp, x='date', y='last_available_confirmed')
+    # confirmed_cases = px.line(temp, x='date', y='last_available_confirmed')
+    confirmed_cases = go.Figure()
+    confirmed_cases.add_trace(go.Scatter(
+        x=temp['date'],
+        y=temp['last_available_confirmed'],
+        marker_color='orange',
+        line_width=3
+    ))
     confirmed_cases.update_layout(
         yaxis_title='Número de casos',
         xaxis_title='',
@@ -146,7 +154,13 @@ def news_graph(df, city):
     confirmed_cases = dcc.Graph(figure=confirmed_cases, config={'displayModeBar': False})
 
     # Daily cases
-    daily_cases = px.line(temp, x='date', y='new_confirmed')
+    # daily_cases = px.line(temp, x='date', y='new_confirmed')
+    daily_cases = go.Figure()
+    daily_cases.add_trace(go.Scatter(
+        x=temp['date'],
+        y=temp['new_confirmed'],
+        line_width=3
+    ))
     daily_cases.update_layout(
         yaxis_title='Número de casos diários',
         xaxis_title='',
@@ -169,7 +183,14 @@ def news_graph(df, city):
     daily_cases = dcc.Graph(figure=daily_cases, config={'displayModeBar': False})
 
     # Deaths cases
-    deaths_cases = px.line(temp, x='date', y='last_available_deaths')
+    # deaths_cases = px.line(temp, x='date', y='last_available_deaths')
+    deaths_cases = go.Figure()
+    deaths_cases.add_trace(go.Scatter(
+        x=temp['date'],
+        y=temp['last_available_deaths'],
+        marker_color='rgb(231, 76, 60)',
+        line_width=3
+    ))
     deaths_cases.update_layout(
         yaxis_title='Número de mortes',
         xaxis_title='',
