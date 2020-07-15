@@ -11,7 +11,7 @@ from app import app, dashboard_backend
 appdash = dash.Dash(
     __name__,
     server=app,
-    url_base_pathname='/dash/',
+    url_base_pathname='/',
     external_stylesheets=[dbc.themes.FLATLY],
     meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1.0'}]
 )
@@ -32,18 +32,10 @@ info_bar = html.Div(
             dbc.Button(
                 children=html.A(
                     className='nav-link',
-                    children='Informações',
-                    href='/info'
+                    children='Sobre',
+                    href='/about'
                 ),
                 color='link'
-            ),
-            dbc.Button(
-                children=html.A(
-                    className='nav-link',
-                    children='Receber Notificações',
-                    href='/updates'
-                ),
-                color='link',
             ),
         ]
     )
