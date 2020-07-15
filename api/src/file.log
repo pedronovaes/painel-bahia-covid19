@@ -1,0 +1,330 @@
+2020-07-14 21:48:36,798 - (main):		Starting
+2020-07-14 21:48:36,798 - (request_from_api):		Starting
+2020-07-14 21:48:36,799 - (request_from_api):		Requesting page 1
+2020-07-14 21:48:37,367 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:37,404 - (request_from_api):		Requesting page 2
+2020-07-14 21:48:38,355 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:38,397 - (request_from_api):		Requesting page 3
+2020-07-14 21:48:39,375 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:39,387 - (request_from_api):		Requesting page 4
+2020-07-14 21:48:39,989 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:40,002 - (request_from_api):		Requesting page 5
+2020-07-14 21:48:40,604 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:40,617 - (request_from_api):		Requesting page 6
+2020-07-14 21:48:41,639 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:41,674 - (request_from_api):		Requesting page 7
+2020-07-14 21:48:42,528 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:42,569 - (request_from_api):		Requesting page 8
+2020-07-14 21:48:43,259 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:43,303 - (request_from_api):		Requesting page 9
+2020-07-14 21:48:44,091 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:44,131 - (request_from_api):		Requesting page 10
+2020-07-14 21:48:44,906 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:44,921 - (request_from_api):		Requesting page 11
+2020-07-14 21:48:45,521 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:45,536 - (request_from_api):		Requesting page 12
+2020-07-14 21:48:46,308 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:46,324 - (request_from_api):		Requesting page 13
+2020-07-14 21:48:46,955 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:46,971 - (request_from_api):		Requesting page 14
+2020-07-14 21:48:47,979 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:47,996 - (request_from_api):		Requesting page 15
+2020-07-14 21:48:48,724 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:48,740 - (request_from_api):		Requesting page 16
+2020-07-14 21:48:49,680 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:49,697 - (request_from_api):		Requesting page 17
+2020-07-14 21:48:50,666 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:50,683 - (request_from_api):		Requesting page 18
+2020-07-14 21:48:51,389 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:51,407 - (request_from_api):		Requesting page 19
+2020-07-14 21:48:52,082 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:52,101 - (request_from_api):		Requesting page 20
+2020-07-14 21:48:52,692 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:52,715 - (request_from_api):		Requesting page 21
+2020-07-14 21:48:53,243 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:53,243 - (request_from_api):		Requesting page 21
+2020-07-14 21:48:53,504 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:53,504 - (request_from_api):		Requesting page 21
+2020-07-14 21:48:53,815 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:53,815 - (request_from_api):		Requesting page 21
+2020-07-14 21:48:54,756 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:54,776 - (request_from_api):		Requesting page 22
+2020-07-14 21:48:55,045 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:55,045 - (request_from_api):		Requesting page 22
+2020-07-14 21:48:55,351 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:55,352 - (request_from_api):		Requesting page 22
+2020-07-14 21:48:55,963 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:55,963 - (request_from_api):		Requesting page 22
+2020-07-14 21:48:56,273 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:56,274 - (request_from_api):		Requesting page 22
+2020-07-14 21:48:56,891 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:56,910 - (request_from_api):		Requesting page 23
+2020-07-14 21:48:57,452 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:57,474 - (request_from_api):		Requesting page 24
+2020-07-14 21:48:58,231 - (request_from_api):		<Response [200]>
+2020-07-14 21:48:58,260 - (request_from_api):		Requesting page 25
+2020-07-14 21:48:58,527 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:58,527 - (request_from_api):		Requesting page 25
+2020-07-14 21:48:58,834 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:58,835 - (request_from_api):		Requesting page 25
+2020-07-14 21:48:59,141 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:59,142 - (request_from_api):		Requesting page 25
+2020-07-14 21:48:59,550 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:59,551 - (request_from_api):		Requesting page 25
+2020-07-14 21:48:59,859 - (request_from_api):		<Response [429]>
+2020-07-14 21:48:59,860 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:00,166 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:00,167 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:00,474 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:00,474 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:00,780 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:00,782 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:01,088 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:01,089 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:01,703 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:01,703 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:02,010 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:02,011 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:02,317 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:02,318 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:02,624 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:02,625 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:02,931 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:02,932 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:03,176 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:03,177 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:03,443 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:03,444 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:03,751 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:03,752 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:04,058 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:04,059 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:04,878 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:04,879 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:05,595 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:05,596 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:05,902 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:05,903 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:06,208 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:06,210 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:06,786 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:06,786 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:07,131 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:07,133 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:07,438 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:07,439 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:07,746 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:07,747 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:08,053 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:08,054 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:08,360 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:08,362 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:08,667 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:08,668 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:08,975 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:08,976 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:09,280 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:09,281 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:09,522 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:09,523 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:09,779 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:09,780 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:10,102 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:10,102 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:10,409 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:10,410 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:10,716 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:10,717 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:11,126 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:11,127 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:11,433 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:11,434 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:11,739 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:11,739 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:12,046 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:12,047 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:12,766 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:12,766 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:12,991 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:12,992 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:13,584 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:13,586 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:14,200 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:14,201 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:14,916 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:14,917 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:15,223 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:15,224 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:15,530 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:15,532 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:15,767 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:15,767 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:16,042 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:16,043 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:16,657 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:16,658 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:16,965 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:16,966 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:17,272 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:17,272 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:17,579 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:17,580 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:17,840 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:17,841 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:18,134 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:18,135 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:18,413 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:18,413 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:18,624 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:18,624 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:18,913 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:18,914 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:19,219 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:19,220 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:19,528 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:19,528 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:19,833 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:19,834 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:20,140 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:20,141 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:20,548 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:20,549 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:20,857 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:20,858 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:21,164 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:21,165 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:21,471 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:21,472 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:21,882 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:21,883 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:22,189 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:22,190 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:22,496 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:22,497 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:22,717 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:22,719 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:23,009 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:23,010 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:23,315 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:23,316 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:23,623 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:23,624 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:23,931 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:23,932 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:24,238 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:24,239 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:24,680 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:24,681 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:24,955 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:24,956 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:25,262 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:25,262 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:25,568 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:25,570 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:25,876 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:25,877 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:26,183 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:26,184 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:26,490 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:26,492 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:26,901 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:26,901 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:27,116 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:27,117 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:27,413 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:27,414 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:27,720 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:27,720 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:28,257 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:28,257 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:28,562 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:28,562 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:28,972 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:28,973 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:29,382 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:29,383 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:29,609 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:29,610 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:30,281 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:30,281 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:30,495 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:30,496 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:30,761 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:30,762 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:31,202 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:31,204 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:31,507 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:31,508 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:31,920 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:31,921 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:32,191 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:32,193 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:32,534 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:32,535 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:32,842 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:32,843 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:33,062 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:33,063 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:33,353 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:33,354 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:33,657 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:33,657 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:33,868 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:33,869 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:34,110 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:34,111 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:34,357 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:34,357 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:34,630 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:34,631 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:34,992 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:34,993 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:35,230 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:35,231 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:35,478 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:35,478 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:35,764 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:35,765 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:36,426 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:36,427 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:36,734 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:36,735 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:37,041 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:37,043 - (request_from_api):		Requesting page 25
+2020-07-14 21:49:37,608 - (request_from_api):		<Response [200]>
+2020-07-14 21:49:37,657 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:37,886 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:37,887 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:38,111 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:38,111 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:38,342 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:38,343 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:38,565 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:38,566 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:38,792 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:38,794 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:39,011 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:39,012 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:39,260 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:39,261 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:39,530 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:39,531 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:39,770 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:39,771 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:40,048 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:40,048 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:40,266 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:40,268 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:40,487 - (request_from_api):		<Response [429]>
+2020-07-14 21:49:40,488 - (request_from_api):		Requesting page 26
+2020-07-14 21:49:41,026 - (request_from_api):		<Response [200]>
+2020-07-14 21:49:41,076 - (request_from_api):		Requesting page 27
+2020-07-14 21:49:41,429 - (request_from_api):		<Response [200]>
+2020-07-14 21:49:41,459 - (request_from_api):		Finishing
+2020-07-14 21:49:41,460 - (dataprep):		Starting
+2020-07-14 21:49:41,685 - (dataprep):		Finishing
+2020-07-14 21:49:41,688 - (save_data):		Starting
+2020-07-14 21:49:41,887 - (save_data):		Shape Database Cidades: (409, 3)
+2020-07-14 21:49:41,892 - (save_data):		Shape Database Ultimos casos: (409, 11)
+2020-07-14 21:49:41,892 - (save_data):		Finishing
+2020-07-14 21:49:41,892 - (main):		Finishing

@@ -117,7 +117,7 @@ def save_data():
     ]]
     last_cases.to_csv(DATABASE_PATH + 'ultimos_casos.csv', index=False)
 
-    logging.info('(save_data):\t\tShape Database Últimos casos: {}'.format(last_cases.shape))
+    logging.info('(save_data):\t\tShape Database Ultimos casos: {}'.format(last_cases.shape))
 
     logging.info('(save_data):\t\tFinishing')
 
