@@ -26,6 +26,11 @@ def news_stats(df, city):
 
     # print(ind_confirmed, ind_deaths, ind_rate, new_confirmed, new_deaths)
 
+    # Brazilian number format
+    ind_confirmed = to_brazilian_format(ind_confirmed)
+    ind_deaths = to_brazilian_format(ind_deaths)
+    ind_rate = ind_rate.replace('.', ',')
+
     return [ind_confirmed, ind_deaths, ind_rate, new_confirmed, new_deaths]
 
 
@@ -69,6 +74,9 @@ def news_table(df):
     df = df[['city', 'last_available_confirmed', 'last_available_deaths']]
     df = df.sort_values(by='last_available_confirmed', ascending=False)
     df = df.drop(df[df['city'].str.contains('Bahia|Importados', regex=True)].index)
+
+    df['last_available_confirmed'] = df['last_available_confirmed'].map(lambda x: to_brazilian_format(x))
+    df['last_available_deaths'] = df['last_available_deaths'].map(lambda x: to_brazilian_format(x))
 
     table = dash_table.DataTable(
         columns=[
@@ -213,3 +221,10 @@ def news_graph(df, city):
     deaths_cases = dcc.Graph(figure=deaths_cases, config={'displayModeBar': False})
 
     return confirmed_cases, daily_cases, deaths_cases
+
+
+def to_brazilian_format(num, sep='.'):
+    if isinstance(num, int):
+        num = str(num)
+
+    return num if len(num) <=3 else to_brazilian_format(num[:-3], sep) + sep + num[-3:]
