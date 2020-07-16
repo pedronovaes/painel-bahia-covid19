@@ -4,7 +4,7 @@ import requests
 import logging
 import numpy as np
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 
 DATABASE_PATH = 'api/data/'
 SRC_PATH = 'api/src/'
@@ -125,7 +125,7 @@ def save_data():
 if __name__ == '__main__':
     # Execute every 6 hours
     while True:
-        logging.info('(main):\t\tStarting')
+        logging.info('(main):\t\tStarting iteration')
 
         # Get data
         df = request_from_api()
@@ -140,6 +140,9 @@ if __name__ == '__main__':
         current_time = pd.DataFrame({'current_time': [current_time]})
         current_time.to_csv(DATABASE_PATH + 'current_time.csv', index=False)
 
-        logging.info('(main):\t\tFinishing')
+        next_iteration = datetime.now() + timedelta(seconds=21600)
+        logging.info('(main):\t\tNext iteration at {}'.format(next_iteration))
+
+        logging.info('(main):\t\tFinishing iteration')
 
         time.sleep(21600)
