@@ -154,6 +154,8 @@ def news_graph(df, city):
         autosize=True,
         showlegend=False,
         legend_orientation='h',
+        xaxis_fixedrange=True,
+        yaxis_fixedrange=True
     )
     confirmed_cases.update_traces(
         hovertemplate='Data: %{x}<br>Confirmados: %{y}<extra></extra>'
@@ -184,6 +186,8 @@ def news_graph(df, city):
         autosize=True,
         showlegend=False,
         legend_orientation='h',
+        xaxis_fixedrange=True,
+        yaxis_fixedrange=True
     )
     daily_cases.update_traces(
         hovertemplate='Data: %{x}<br>Confirmados: %{y}<extra></extra>'
@@ -213,7 +217,10 @@ def news_graph(df, city):
         font=dict(family='Roboto, sans-serif', size=12, color='#f4f4f4'),
         autosize=True,
         showlegend=False,
-        legend_orientation='h'
+        legend_orientation='h',
+        xaxis_fixedrange=True,
+        yaxis_fixedrange=True
+
     )
     deaths_cases.update_traces(
         hovertemplate='Data: %{x}<br>Mortes: %{y}<extra></extra>'
