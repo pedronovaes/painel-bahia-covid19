@@ -11,5 +11,3 @@ numpy
 pandas
 plotly
 requests
-painel.ini
-wsgi.py

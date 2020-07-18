@@ -1,1 +1,5 @@
 api/src/.ipynb_checkpoints
+painel.ini
+wsgi.py
+api/data
+api/src/file.log
