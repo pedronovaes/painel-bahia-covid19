@@ -143,9 +143,9 @@ if __name__ == '__main__':
         current_info = pd.DataFrame({'current_date': [current_date], 'current_time': [current_time]})
         current_info.to_csv(DATABASE_PATH + 'current_time.csv', index=False)
 
-        next_iteration = datetime.now() + timedelta(seconds=21600)
+        next_iteration = datetime.now() + timedelta(seconds=10800)
         logging.info('(main):\t\tNext iteration at {}'.format(next_iteration))
 
         logging.info('(main):\t\tFinishing iteration')
 
-        time.sleep(21600)
+        time.sleep(10800)
