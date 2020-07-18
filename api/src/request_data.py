@@ -137,8 +137,11 @@ if __name__ == '__main__':
         save_data()
 
         current_time = datetime.now().strftime('%H:%M')
-        current_time = pd.DataFrame({'current_time': [current_time]})
-        current_time.to_csv(DATABASE_PATH + 'current_time.csv', index=False)
+        current_date = str(datetime.now().date()).split('-')
+        current_date = 'Última Atualização: ' + current_date[2] + '-' + current_date[1] + '-' + current_date[0]
+
+        current_info = pd.DataFrame({'current_date': [current_date], 'current_time': [current_time]})
+        current_info.to_csv(DATABASE_PATH + 'current_time.csv', index=False)
 
         next_iteration = datetime.now() + timedelta(seconds=21600)
         logging.info('(main):\t\tNext iteration at {}'.format(next_iteration))

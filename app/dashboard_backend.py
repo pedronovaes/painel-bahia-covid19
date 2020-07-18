@@ -69,8 +69,6 @@ def news_mapbox(df):
 
 
 def news_table(df):
-    last_update = df['date'].unique()[-1]
-
     df = df[['city', 'last_available_confirmed', 'last_available_deaths']]
     df = df.sort_values(by='last_available_confirmed', ascending=False)
     df = df.drop(df[df['city'].str.contains('Bahia|Importados', regex=True)].index)
@@ -119,12 +117,7 @@ def news_table(df):
         ],
     )
 
-    last_update = last_update.split('-')
-    last_update = str(last_update[2] + '-' + last_update[1] + '-' + last_update[0])
-
-    last_update = 'Última Atualização: ' + last_update
-
-    return table, last_update
+    return table
 
 
 def news_graph(df, city):
