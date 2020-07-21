@@ -345,7 +345,7 @@ def update_graphs(city):
         deaths_graph_header, deaths_cases
 
 
-app.index_string = """<!DOCTYPE html>
+appdash.index_string = """<!DOCTYPE html>
 <html>
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
